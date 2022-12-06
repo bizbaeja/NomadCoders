@@ -1,0 +1,15 @@
+.box {
+  background: blue;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2px;
+  /* block 은 마진이 끝도 없이 펼쳐져있어 옆으로 다른 개체가 올 수 없다 inline 은 box 가 아니다.
+  (너비와 높이가 없다) block은 너비와 높이가 있다.  */
+  display: inline-block;
+  color: white;
+}
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
