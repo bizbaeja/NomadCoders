@@ -1,20 +1,26 @@
 .father {
   display: flex;
+  /* Main Axis */
   justify-content: space-around;
-
-  height: 200vh;
+  width: 100%;
 }
-/* align-self and order */
+/* flex-shrink :  flexbox가 쥐어짜질 때, element 의 행동을 정의한다 (어떤게 다른것들보다 더 찌그러질지 정하기)
+
+기본값
+
+flex-shrink: 1` */
 .child {
   width: 200px;
   height: 200px;
   background: peru;
   color: white;
   font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.child:nth-child(1) {
-  order: 2;
-}
+
 .child:nth-child(2) {
-  order: 3;
+  background: #000;
+  flex-shrink: 2;
 }
