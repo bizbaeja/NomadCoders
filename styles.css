@@ -4,11 +4,7 @@
   justify-content: space-around;
   width: 100%;
 }
-/* flex-shrink :  flexbox가 쥐어짜질 때, element 의 행동을 정의한다 (어떤게 다른것들보다 더 찌그러질지 정하기)
 
-기본값
-
-flex-shrink: 1` */
 .child {
   width: 200px;
   height: 200px;
