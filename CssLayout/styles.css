@@ -1,28 +1,20 @@
 .grid {
   display: grid;
   gap: 10px;
-  /*auto는 가능한 크게 */
-  /*repeat(횟수, 크기)는 원하는 핏이 있을 때,  */
-  grid-template-columns: [first-line]100px[second-line]100px[third-line][fourth-line]100px[fifth-line]100px;
-  grid-template-rows: repeat(4, 100px[bizbaeja-line]);
+  /*fr (=fraction 부분을 차지한다)*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
 }
 .header {
   background-color: #2ecc71;
-  grid-column: first-line/fourth-line;
-
-  grid-row: bizbaeja-line 2 / bizbaeja-line 4;
 }
 .content {
   background-color: #3498db;
-  grid-column: 1/4;
-  grid-row: 2/4;
 }
 .nav {
   background-color: #8e44ad;
-  grid-row: 2/4;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-column: 1/5;
 }
