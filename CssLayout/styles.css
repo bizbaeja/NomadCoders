@@ -5,11 +5,9 @@
 
   height: 50vh;
   grid-template:
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr/1fr 1fr 1fr 1fr;
-
-  /*초록색이 다른 색보다 4배가 큼
+    [header-start] "header header header header" 1fr[header-end]
+    [content-start] "content content content nav" 2fr[content-end]
+    [footer-start] "footer footer footer footer" 1fr [footer-end]; /*초록색이 다른 색보다 4배가 큼
   grid-template-columsns: 4fr 1fr 1fr 1fr;*/
   /*grid-template-rows: repeat(4, 1f) 을 하면 사라지게 된다. (현재 상태가 높이가 없기때문) 높이를 설정해줘야한다.*/
   /*#grid-template*/
