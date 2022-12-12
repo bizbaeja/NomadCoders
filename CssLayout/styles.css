@@ -1,24 +1,26 @@
+body {
+  background-color: black;
+}
 .grid {
+  background-color: black;
+  color: white;
   display: grid;
   gap: 5px;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 1fr);
-  justify-items: stretch;
+  align-content: streach;
 }
 .header {
-  grid-area: header;
+  background-color: wheat;
 }
 .content {
   background-color: #3498db;
-  grid-area: content;
 }
 .nav {
   background-color: #8e44ad;
-  grid-area: nav;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-area: footer;
 }
