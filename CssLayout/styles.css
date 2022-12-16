@@ -1,12 +1,10 @@
 .grid {
-  background-color: aliceblue;
+  background-color: rgb(233, 239, 245);
   color: white;
   display: grid;
   gap: 5px;
-  height: 100vh;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-  grid-auto-flow: column;
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
 }
 .item:nth-child(odd) {
   background-color: #8e44ad;
@@ -14,4 +12,10 @@
 
 .item:nth-child(even) {
   background-color: #f39c12;
+}
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
